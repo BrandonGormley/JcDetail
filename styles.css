@@ -1,0 +1,367 @@
+/* ========== UNIVERSAL STYLES================== */
+
+* {
+	box-sizing:border-box;
+	margin:0;
+    padding:0;
+    font-family: 'Oswald', sans-serif;
+}
+
+@font-face {
+    font-family: Dark Seed;
+    src: url(fonts/Dark\ Seed.otf);
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-color: black;
+}
+
+
+/*====================== LANDING STYLES =========================*/
+
+.landing-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0, 0, 0)), url('img/main-bg-ram.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* overflow: scroll; */
+
+}
+
+.landing-heading,
+.landing-heading span {
+    color: white;
+    font-family: Dark Seed;
+    font-size: 5rem;
+    margin: 8px 0;
+}
+
+.landing-heading span {
+    color: #8501d1;
+}
+
+.landing-button {
+	background-color:transparent;
+    border-radius: 1px;
+    letter-spacing: 2px;
+	border:2px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size: 1.5rem;
+	font-weight: bold;
+	padding: 4px 20px;
+    text-decoration:none;
+    font-family: Dark Seed;
+    transition: .3s;
+}
+
+.disabled {
+	background-color:transparent;
+    border-radius: 1px;
+    letter-spacing: 2px;
+	border:2px solid #8f8f8f;
+    display:inline-block;
+	color:#8f8f8f;
+	font-size: 1.5rem;
+	font-weight:bold;
+	padding: 4px 20px;
+    text-decoration:none;
+    font-family: Dark Seed;
+}
+
+.landing-button:hover,
+.landing-button:active {
+    transform: scale(1.2);
+    background: white;
+    color: black;
+}
+
+/* ============= NAVBAR STYLES ==================== */
+
+
+.navbar {
+    text-transform: uppercase;
+    font-size: .9rem;
+    letter-spacing: .2rem;
+}
+
+.navbar-brand img {
+    height: 2rem;
+}
+
+.navbar-nav li {
+    padding-right: .7rem;
+}
+
+.navbar-dark
+.navbar-nav
+.nav-link {
+    color: white;
+    padding-top: .8rem;
+    transition: 0.3s;
+}
+
+.navbar-dark
+.navbar-nav
+.nav-link.active,
+.navbar-dark
+.navbar-nav
+.nav-link:hover {
+    color: #8501d1;
+    transform: scale(1.1);
+}
+
+.navbar-dark
+.navbar-nav
+.nav-link:active {
+    color: #8501d1;
+    transform: scale(1.1);
+}
+
+.bg-dark {
+    background-color: rgba(0,0,0, 0.5)!important;
+}
+
+/* ====================== ABOUT US =================== */
+
+.main-container {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    width: 80%;
+    top: 10%;
+}
+
+.title-heading,
+.title-heading span {
+    color: white;
+    font-family: Dark Seed;
+    font-size: 5rem;
+}
+
+.title-heading span {
+    color: #8501d1;
+}
+
+.title-text {
+    color: white;
+    font-size: 1.5rem;
+}
+
+/* ====================== SERVICES =================== */
+
+.main-container-services {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-item {
+    margin: 8px;
+    transition: .3s;
+
+}
+
+.flex-item:hover {
+    transform: scale(1.1);
+}
+
+.flex-item-title {
+    color: #ffffff;
+    border-bottom: 2px solid #8501d1;
+    text-align: center;
+    padding-bottom: 8px;
+}
+
+.flex-item-text {
+    color: white;
+    font-size: 1.1rem;
+}
+
+/* ====================== GALLERY  =================== */
+
+.gallery-img {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid white;
+    transition: .3s ease-in;
+}
+
+.gallery-img:hover {
+    transform: scale(1.05);
+}
+
+/* ====================== CONTACT  =================== */
+
+.title-text-contact {
+    color: white;
+}
+
+.contact-email {
+    color: white;
+    font-size: 1.5rem;
+    margin: 8px 0;
+}
+
+.contact-email-link {
+    color: white;
+    text-decoration: none;
+}
+
+.contact-email-link:hover,
+.contact-email-link:active {
+    color: #8501d1;
+    text-decoration: none;
+}
+
+.contact-phone {
+    color: white;
+    font-size: 1.5rem;
+    margin: 8px 0;
+}
+
+/* ====================== PACKAGES  =================== */
+
+.flex-item-package {
+    padding: 16px;
+    margin: 8px;
+    border: 5px solid rgb(146, 146, 146);
+    background-color: black;
+    transition: .3s ease-in;
+    max-width: 550px;
+}
+
+.flex-item-package:hover {
+    transform: scale(1.03);
+    border: 5px solid #8501d1;
+}
+
+.package-title {
+    color: #ffffff;
+    border-bottom: 2px solid #8501d1;
+    text-align: center;
+    padding-bottom: 8px;
+}
+
+.package-text {
+    color: white;
+    font-size: 1.1rem;
+}
+
+.cost {
+    font-size: 2rem;
+    color: #8501d1;
+}
+
+
+
+
+
+
+/* =============FOOTER==================== */
+
+.landing-footer {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+}
+
+
+.landing-footer p {
+    align-self: center;
+    color: white;
+    padding: 0;
+    margin: 4px 0;
+}
+
+.owner {
+    font-size: .80rem;
+}
+
+.owner-link {
+    color: white;
+    text-decoration: none;
+}
+
+.owner-link:hover,
+.owner-link:active {
+    color: #8501d1;
+    text-decoration: none;
+}
+
+ul {
+    align-self: center;
+}
+
+.social-logo {
+    width: 30px;
+    height: 30px;
+    margin: 0 8px;
+    transition: .3s;
+}
+
+.social-logo:hover,
+.social-logo:active {
+    transform: scale(1.1);
+}
+
+/* ================== FOOTER FOR ALL BUT LANDING ================ */
+
+.landing-footer-main {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
+
+.landing-footer-main p {
+    align-self: center;
+    color: white;
+    padding: 0;
+}
+
+/*====================== MEDIA QUERIES =========================*/
+
+@media (min-width: 768px) {
+    .landing-heading,
+    .landing-heading span {
+        font-size: 6.5rem;
+    }
+
+    .main-container-services {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .flex-item {
+        width: 40%;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .landing-heading,
+    .landing-heading span {
+        font-size: 8rem;
+    }
+
+    .flex-item {
+        width: 30%;
+    }
+
+    .flex-item-package {
+        width: 40%;
+    }
+}
